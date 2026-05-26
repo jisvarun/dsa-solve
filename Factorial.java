@@ -15,5 +15,6 @@ public class Factorial{
     System.out.println("Enter a number: ");
     n = myObj.nextInt();
     System.out.println("Factorial of 5: " + fact(n));
+    myObj.close(); 
   }
 }
