@@ -10,11 +10,10 @@ public class Factorial{
   }
 
   public static void main(String[] args) {
-    int n;
-    Scanner myObj = new Scanner(System.in);
-    System.out.println("Enter a number: ");
-    n = myObj.nextInt();
-    System.out.println("Factorial of 5: " + fact(n));
-    myObj.close(); 
+    try (Scanner myObj = new Scanner(System.in)) {
+      System.out.println("Enter a number: ");
+      int n = myObj.nextInt();
+      System.out.println("Factorial of " + n + ": " + fact(n));
+    }
   }
 }
