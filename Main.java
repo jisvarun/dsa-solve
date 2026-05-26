@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 // Sum of Natural Numbers (n=3)
 // The sum of first 3 natural numbers is 1+2+3 = 6
 
@@ -11,7 +14,11 @@ public class Main{
   }
   public static void main(String[] args)
   {
-    int n = 7;
-    System.out.println(sum(n));
+    int n;
+    Scanner myObj = new Scanner(System.in);
+    System.out.println("Enter a number: ");
+    n = myObj.nextInt();
+    System.out.println("Sum of natural number: " + sum(n));
+    myObj.close(); 
   }
 }
